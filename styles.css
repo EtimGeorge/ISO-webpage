@@ -385,6 +385,17 @@ section {
   background-color: var(--secondary);
 }
 
+/* this will overide the position of the red buttom border */
+.footer-social h4::after{
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 31.5rem;
+  width: 50px;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
 .footer ul li {
   margin-bottom: 0.75rem;
 }
@@ -1056,6 +1067,7 @@ input:focus, select:focus, textarea:focus {
   .footer-legal {
     margin-top: 0;
   }
+
 }
 
 @media (min-width: 1024px) {
@@ -1070,4 +1082,6 @@ input:focus, select:focus, textarea:focus {
   .badges-wrapper img {
     height: 64px;
   }
+
+
 }
