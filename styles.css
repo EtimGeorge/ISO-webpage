@@ -388,7 +388,7 @@ section {
 }
 
 /* this will overide the position of the red buttom border */
-.footer-social h4::after{
+/* .footer-social h4::after{
   content: '';
   position: absolute;
   bottom: -0.5rem;
@@ -396,7 +396,7 @@ section {
   width: 50px;
   height: 2px;
   background-color: var(--secondary);
-}
+} */
 
 .footer ul li {
   margin-bottom: 0.75rem;
