@@ -1181,7 +1181,7 @@ input:focus, select:focus, textarea:focus {
 .certificate-link {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: var(--primary);
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -1189,7 +1189,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .certificate-link:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-hover);
 }
 
 @media (max-width: 768px) {
