@@ -990,3 +990,86 @@ function initModal() {
     }
   });
 }
+
+
+//start of iso certification
+
+// Certificate data - Replace with your actual certificates
+const certificates = [
+  {
+    id: 1,
+    title: "MAMTECH SERVICES LIMITED",
+    type: "ISO 9001",
+    imageUrl: "/assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
+    pdfUrl: "/assets/MAMTECH-SERVICES-LIMITED-9001-2015.pdf"
+  },
+  {
+    id: 2,
+    title: "MAMTECH SERVICES LIMITED",
+    type: "ISO 45001",
+    imageUrl: "/assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
+    pdfUrl: "/assets/MAMTECH-SERVICES-LIMITED-4501.pdf"
+  },
+  {
+    id: 3,
+    title: "MAMTECH SERVICES LIMITED",
+    type: "ISO 14001",
+    imageUrl: "/assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
+    pdfUrl: "/assets/MAMTECH-SERVICES-LIMITED-14001.pdf"
+  },
+  {
+    id: 4,
+    title: "Quality Systems Ltd",
+    type: "ISO 9001",
+    imageUrl: "/api/placeholder/400/200", // Replace with actual thumbnail image
+    pdfUrl: "/assets/quality-systems-9001.pdf"
+  }
+];
+
+// Function to render certificates
+function renderCertificates(filter = 'all') {
+  const gridElement = document.getElementById('certificatesGrid');
+  gridElement.innerHTML = '';
+  
+  certificates.forEach(cert => {
+    if (filter === 'all' || cert.type === filter) {
+      const certificateCard = document.createElement('div');
+      certificateCard.className = 'certificate-item';
+      
+      certificateCard.innerHTML = `
+        <img src="${cert.imageUrl}" alt="${cert.title} Certificate" class="certificate-image">
+        <div class="certificate-info">
+          <h3 class="certificate-title">${cert.title}</h3>
+          <div class="certificate-type">${cert.type}</div>
+          <a href="${cert.pdfUrl}" class="certificate-link" target="_blank">View Certificate</a>
+        </div>
+      `;
+      
+      gridElement.appendChild(certificateCard);
+    }
+  });
+}
+
+// Initialize certificate gallery
+document.addEventListener('DOMContentLoaded', function() {
+  // Render all certificates initially
+  renderCertificates();
+  
+  // Set up filter buttons
+  const filterButtons = document.querySelectorAll('.filter-button');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Filter certificates
+      const filterValue = this.getAttribute('data-filter');
+      renderCertificates(filterValue);
+    });
+  });
+});
+
+//  end of iso certificates 
