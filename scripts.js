@@ -1000,29 +1000,29 @@ const certificates = [
     id: 1,
     title: "MAMTECH SERVICES LIMITED",
     type: "ISO 9001",
-    imageUrl: "/assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
-    pdfUrl: "/assets/MAMTECH-SERVICES-LIMITED-9001-2015.pdf"
+    imageUrl: "./assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
+    pdfUrl: "./assets/MAMTECH-SERVICES-LIMITED-9001-2015.pdf"
   },
   {
     id: 2,
     title: "MAMTECH SERVICES LIMITED",
     type: "ISO 45001",
-    imageUrl: "/assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
-    pdfUrl: "/assets/MAMTECH-SERVICES-LIMITED-4501.pdf"
+    imageUrl: "./assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
+    pdfUrl: "./assets/MAMTECH-SERVICES-LIMITED-4501.pdf"
   },
   {
     id: 3,
     title: "MAMTECH SERVICES LIMITED",
     type: "ISO 14001",
-    imageUrl: "/assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
-    pdfUrl: "/assets/MAMTECH-SERVICES-LIMITED-14001.pdf"
+    imageUrl: "./assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
+    pdfUrl: "./assets/MAMTECH-SERVICES-LIMITED-14001.pdf"
   },
   {
     id: 4,
     title: "SAENCRYSTAL GLOBAL SERVICES LTD",
     type: "ISO 9001",
-    imageUrl: "/assets/SAENCRYSTAL_GLOBAL__1_-removebg-preview.PNG", // Replace with actual thumbnail image
-    pdfUrl: "/assets/quality-systems-9001.pdf"
+    imageUrl: "./assets/SAENCRYSTAL_GLOBAL__1_-removebg-preview.PNG", // Replace with actual thumbnail image
+    pdfUrl: "./assets/quality-systems-9001.pdf"
   }
 ];
 
