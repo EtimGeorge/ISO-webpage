@@ -1021,7 +1021,7 @@ const certificates = [
     id: 4,
     title: "SAENCRYSTAL GLOBAL SERVICES LTD",
     type: "ISO 9001",
-    imageUrl: "./assets/SAENCRYSTAL_GLOBAL__1_-removebg-preview.PNG", // Replace with actual thumbnail image
+    imageUrl: "./assets/SAENCRYSTAL_GLOBAL__logo.png", // Replace with actual thumbnail image
     pdfUrl: "./assets/quality-systems-9001.pdf"
   }
 ];
