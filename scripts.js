@@ -1015,7 +1015,7 @@ const certificates = [
     title: "MAMTECH SERVICES LIMITED",
     type: "ISO 14001",
     imageUrl: "./assets/mamtech-high-resolution-logo.jpg", // Replace with actual thumbnail image
-    pdfUrl: "./assets/MAMTECH-SERVICES-LIMITED-14001.pdf"
+    pdfUrl: "./assets/MAMTECH-SERVICES-LIMITED-1401.pdf"
   },
   {
     id: 4,

@@ -1199,3 +1199,39 @@ input:focus, select:focus, textarea:focus {
 }
 
  /* end of iso certificates  */
+
+
+
+
+
+
+
+
+ /* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .global-map {
+    height: 300px;
+  }
+  
+  .contact-form-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    padding: 0.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 1rem;
+  }
+}
